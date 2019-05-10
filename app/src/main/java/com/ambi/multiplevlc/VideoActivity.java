@@ -20,8 +20,6 @@ public class VideoActivity extends Activity {
         setContentView(R.layout.layout);
 
         String video = "rtsp://admin:Hf123456@120.209.197.71/Streaming/Channels/102";
-        String video1 = "rtsp://admin:pioctave@123@192.168.10.110:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif";
-        String video2 = "rtsp://192.168.11.110:8554/mediastream0";
 
 
         // add feed fragment to view
@@ -32,11 +30,11 @@ public class VideoActivity extends Activity {
 
         // add feed fragment to view
         this.showFragment(
-                VideoFragment.newInstance(video1),
+                VideoFragment.newInstance(video),
                 R.id.video_container1);
         // add feed fragment to view
         this.showFragment(
-                VideoFragment.newInstance(video2),
+                VideoFragment.newInstance(video),
                 R.id.video_container2);
     }
 
